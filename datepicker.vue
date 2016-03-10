@@ -272,10 +272,10 @@
   }
   .datepicker-days .disabled {
     color: #ccc;
-    cursor: default;
+    cursor: not-allowed;
   }
   .datepicker-days .del {
-    text-decoration: line-through;
+    text-decoration: line-through!important;
   }
   .datepicker-days .today {
     color: #ea6153;
