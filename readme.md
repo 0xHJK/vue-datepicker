@@ -4,7 +4,7 @@ vue选择日期的组件，可以设置可选范围，可以设置不可选日�
 
 #预览
 
-![vue-datepicker]('./vue-datepicker.gif')
+![vue-datepicker](./vue-datepicker.gif)
 
 #参数
 
