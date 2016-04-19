@@ -16,7 +16,7 @@
     <div class="datepicker-days">
       <a v-for="day in days" href="javascript:;"
       :class="{'today':day.today, 'disabled':day.disabled, 'del':day.del}"
-      data-theday="{{ day.theday }}" title="{{ day.title }}" 
+      data-theday="{{ day.theday }}" title="{{ day.title }}"
       @click="select(day, $event)">{{ day.day }}</a>
     </div>
     <p v-if="pickerror.show" class="center tips">{{ pickerror.info }}</p>
@@ -32,7 +32,7 @@
       theday: { type: String, default: '' },
       begin: { type: String, default: '1970-01-01' },
       end: { type: String, default: '2030-12-31' },
-      disables: { type: Array, default: [] },
+      disables: { type: Array, default: () => [] },
       sep: { type: String, default: '-' }
     },
     data () {
